@@ -1,0 +1,74 @@
+{
+  "graph" : {
+    "processes" : {
+      "Source0" : {
+        "component" : "Source",
+        "properties" : {
+          "interim" : false,
+          "cache" : false
+        },
+        "metadata" : {
+          "label" : "Source0",
+          "x" : 170,
+          "y" : 50
+        },
+        "ports" : {
+          "inputs" : [ ],
+          "outputs" : [ "out" ]
+        },
+        "lineage" : ""
+      },
+      "Target0" : {
+        "component" : "Target",
+        "properties" : {
+          "interim" : false,
+          "cache" : false
+        },
+        "metadata" : {
+          "label" : "Target0",
+          "x" : 290,
+          "y" : 50
+        },
+        "ports" : {
+          "inputs" : [ "in" ],
+          "outputs" : [ ]
+        },
+        "lineage" : ""
+      }
+    },
+    "connections" : [ {
+      "src" : {
+        "process" : "Source0",
+        "port" : "out"
+      },
+      "tgt" : {
+        "process" : "Target0",
+        "port" : "in"
+      },
+      "metadata" : {
+        "route" : "e_Hy6xhOTeK"
+      },
+      "lineage" : ""
+    } ],
+    "groups" : [ ],
+    "locked" : false,
+    "metainfo" : {
+      "lastUpdated" : 1629486075322,
+      "id" : "Yetanotherworkflow",
+      "memory" : 1,
+      "imported" : true,
+      "language" : "scala",
+      "processors" : 1,
+      "cluster" : "local",
+      "mode" : "batch",
+      "interimMode" : "full",
+      "udfs" : null,
+      "codeMode" : "sparse",
+      "buildSystem" : "maven",
+      "udafs" : null,
+      "sparkOptions" : null
+    },
+    "inports" : { },
+    "outports" : { }
+  }
+}

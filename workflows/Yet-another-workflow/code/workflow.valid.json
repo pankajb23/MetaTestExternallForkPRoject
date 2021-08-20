@@ -1,0 +1,67 @@
+{
+  "resolvers" : [ ],
+  "graph" : {
+    "metainfo" : {
+      "cluster" : "local",
+      "id" : "Yetanotherworkflow",
+      "memory" : 1,
+      "mode" : "batch",
+      "processors" : 1,
+      "language" : "scala",
+      "imported" : true,
+      "interimMode" : "full",
+      "codeMode" : "sparse",
+      "buildSystem" : "maven"
+    },
+    "connections" : [ {
+      "metadata" : {
+        "route" : "e_Hy6xhOTeK"
+      },
+      "src" : {
+        "port" : "out",
+        "process" : "Source0"
+      },
+      "tgt" : {
+        "port" : "in",
+        "process" : "Target0"
+      }
+    } ],
+    "groups" : [ ],
+    "inports" : { },
+    "outports" : { },
+    "processes" : {
+      "Source0" : {
+        "component" : "Source",
+        "metadata" : {
+          "label" : "Source0",
+          "x" : 170,
+          "y" : 50
+        },
+        "ports" : {
+          "inputs" : [ ],
+          "outputs" : [ "out" ]
+        },
+        "properties" : {
+          "interim" : false,
+          "cache" : false
+        }
+      },
+      "Target0" : {
+        "component" : "Target",
+        "metadata" : {
+          "label" : "Target0",
+          "x" : 290,
+          "y" : 50
+        },
+        "ports" : {
+          "inputs" : [ "in" ],
+          "outputs" : [ ]
+        },
+        "properties" : {
+          "interim" : false,
+          "cache" : false
+        }
+      }
+    }
+  }
+}
